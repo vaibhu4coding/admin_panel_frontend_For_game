@@ -12,15 +12,31 @@ const Player = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState({});
     const [playerData, setPlayerData] = useState([]);
-  const fetchData = async () => {
-    try {
-      const response = await axios.post('http://localhost:5000/api/v1/player/get-players', filter);
-        setData(response.data.counts);
-        setPlayerData(response.data.players)
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+    const fetchData = async () => {
+        try {
+          const token = localStorage.getItem('adminToken');
+          const headers = {
+            'Authorization': `Bearer ${token}`,
+          };
+    
+          const response = await axios.post(
+            'http://localhost:5000/api/v1/player/get-players',
+            filter,
+            {
+              headers: headers, 
+            }
+          );
+    
+          setData(response.data.counts);
+          setPlayerData(response.data.players);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      };
+    
+      useEffect(() => {
+        fetchData();
+      }, [filter]);
 
   useEffect(() => {
     fetchData();
