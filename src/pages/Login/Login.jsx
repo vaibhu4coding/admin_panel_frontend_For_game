@@ -18,7 +18,7 @@ function AdminLogin() {
         if (response.status === 200) {
           alert(`Login successful: ${response.data.message}`);
             localStorage.setItem('adminToken', response.data.token);
-            window.location.href = "/dashboard"
+            window.location.href = "/players"
         } else {
           alert(response.data.message);
         }

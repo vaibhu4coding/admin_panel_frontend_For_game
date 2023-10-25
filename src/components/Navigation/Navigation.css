@@ -1,0 +1,36 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top of the container */
+    padding: 20px;
+  }
+  p {
+    color: white;
+    text-decoration: none;
+  }
+  .dashboard-card {
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .red-card {
+    background-color: #ff6b6b;
+  }
+  
+  .blue-card {
+    background-color: #6b77ff;
+  }
+  
+  .green-card {
+    background-color: #6bff77;
+  }
+  
