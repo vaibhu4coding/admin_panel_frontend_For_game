@@ -1,0 +1,8 @@
+/* In your main CSS file or within a <style> tag in your JSX file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+/* Global CSS file */
+* {
+    font-family: 'Roboto', sans-serif; /* Change the font family to 'Roboto' */
+    font-weight: 300;
+  }
+  
