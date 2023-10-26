@@ -17,20 +17,19 @@ const WalletChart = () => {
   });
 
   useEffect(() => {
-    // Get the token from localStorage
+
     const adminToken = localStorage.getItem('adminToken');
 
-    // Define the API endpoint
-    const apiUrl = 'http://localhost:5000/api/v1/wallet/get-wallet-cnt';
+    const apiUrl = 'https://luck24seven.com/admin_backend_luck24/api/v1/wallet/get-wallet-cnt';
 
-    // Set up the request configuration
+
     const config = {
       headers: {
         Authorization: `Bearer ${adminToken}`,
       },
     };
 
-    // Make the POST request using Axios
+
     axios.get(apiUrl, config)
       .then((response) => {
         setCounts(response.data);

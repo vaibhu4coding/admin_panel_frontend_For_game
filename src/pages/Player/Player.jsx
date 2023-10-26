@@ -20,7 +20,7 @@ const Player = () => {
           };
     
           const response = await axios.post(
-            'http://localhost:5000/api/v1/player/get-players',
+            'https://luck24seven.com/admin_backend_luck24/api/v1/player/get-players',
             filter,
             {
               headers: headers, 
