@@ -19,7 +19,7 @@ const UserGraph = () => {
       const adminToken = localStorage.getItem('adminToken');
 
       const response = await axios.post(
-        'https://luck24seven.com/admin_backend_luck24/api/v1/user/user-cnt',
+        'http://13.235.87.222:5000/api/v1/user/user-cnt',
         {
           year: year,
           month: month,

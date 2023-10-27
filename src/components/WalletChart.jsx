@@ -20,7 +20,7 @@ const WalletChart = () => {
 
     const adminToken = localStorage.getItem('adminToken');
 
-    const apiUrl = 'https://luck24seven.com/admin_backend_luck24/api/v1/wallet/get-wallet-cnt';
+    const apiUrl = 'http://13.235.87.222:5000/api/v1/wallet/get-wallet-cnt';
 
 
     const config = {

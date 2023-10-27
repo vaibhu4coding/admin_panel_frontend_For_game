@@ -13,7 +13,7 @@ function AdminLogin() {
       password,
     };
 
-    Axios.post('https://luck24seven.com/admin_backend_luck24/api/v1/admin/login', data)
+    Axios.post('http://13.235.87.222:5000/api/v1/admin/login', data)
       .then((response) => {
         if (response.status === 200) {
           alert(`Login successful: ${response.data.message}`);

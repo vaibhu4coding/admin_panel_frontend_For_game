@@ -1,6 +1,6 @@
 {
   "name": "admin_panel",
-  "private": true,
+  "homepage": "https://luck24seven.com/admin_frontend_luck24/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
