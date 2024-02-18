@@ -20,7 +20,7 @@ const Player = () => {
           };
     
           const response = await axios.post(
-            'http://13.235.87.222:5000/api/v1/player/get-players',
+            'http://localhost:5000/api/v1/player/get-players',
             filter,
             {
               headers: headers, 
